@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sermons | WCEC</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.about-page{
+position:relative;
+background:url("images/sermons-bg3.jpg") center center/cover fixed;
+color:white;
+padding-top:150px;
+}
+
+.about-page::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.65);
+}
+
+.about-content{
+position:relative;
+z-index:2;
+max-width:900px;
+margin:auto;
+padding:0 20px;
+text-align:center;
+}
+
+.page-title{
+margin-bottom:120px;
+}
+
+.page-title h1{
+font-size:70px;
+margin-bottom:15px;
+}
+
+.page-title p{
+font-size:20px;
+opacity:.9;
+}
+
+.about-block{
+margin-bottom:130px;
+}
+
+.about-block h2{
+font-size:64px;
+margin-bottom:20px;
+}
+
+.divider{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+margin-bottom:30px;
+color:#d6b05d;
+font-size:32px;
+}
+
+.divider span{
+width:90px;
+height:2px;
+background:#d6b05d;
+display:block;
+}
+
+.about-block p{
+font-size:22px;
+line-height:1.8;
+}
+
+/* Dagdag na CSS para sa maganda at responsive na YouTube Video embed */
+.video-container {
+position:relative;
+padding-bottom:56.25%; /* 16:9 Aspect Ratio */
+height:0;
+overflow:hidden;
+max-width:100%;
+margin-bottom:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+border: 1px solid rgba(214, 176, 93, 0.3); /* May manipis na gold border para bagay sa motif niyo */
+}
+
+.video-container iframe {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:0;
+}
+
+.sermon-meta {
+font-size:18px;
+color:#d6b05d;
+margin-bottom:15px;
+font-style:italic;
+}
+
+.about-footer{
+background:#050505;
+padding:60px 8%;
+color:white;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.about-footer h3{
+margin-bottom:20px;
+}
+
+.about-footer a{
+color:white;
+text-decoration:none;
+display:block;
+margin-bottom:10px;
+}
+
+.copyright{
+background:#050505;
+text-align:center;
+padding:20px;
+color:#ccc;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+
+@media(max-width:768px){
+
+.page-title h1{
+font-size:45px;
+}
+
+.about-block h2{
+font-size:42px;
+}
+
+.about-block p{
+font-size:18px;
+}
+
+.about-footer{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+<div class="logo">
+WCEC
+<small>World Conquest Evangelistic Church</small>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">HOME</a></li>
+<li><a href="sermons.html" class="active">SERMONS</a></li> 
+<li><a href="about.html">ABOUT</a></li>
+</ul>
+
+</header>
+
+<!-- SERMONS PAGE -->
+
+<section class="about-page">
+
+<div class="about-content">
+
+<div class="page-title">
+<h1>Church Sermons</h1>
+<p>World Conquest Evangelistic Church</p>
+</div>
+
+<!-- SERMON 1 -->
+
+<div class="about-block">
+
+<h2>Latest Message</h2>
+
+<div class="divider">
+<span></span>
+✝
+<span></span>
+</div>
+
+<!-- Inilagay ko na rito yung unang video mo pre -->
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/5-Y9diDJI2Q" title="WCEC Sermon 1" allowfullscreen></iframe>
+</div>
+
+<div class="sermon-meta">WCEC Live Stream Service</div>
+
+<p>
+Ito ang maikling deskripsyon o buod ng pinakabagong sermon. Pwede mong ilagay dito ang main scripture text, sermon title, o ang pinaka-core message ng naging turo ngayong linggo.
+</p>
+
+</div>
+
+<!-- SERMON 2 -->
+
+<div class="about-block">
+
+<h2>Recent Sermon</h2>
+
+<div class="divider">
+<span></span>
+✝
+<span></span>
+</div>
+
+<!-- Inilagay ko na rito yung pangalawang video mo pre -->
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/K3IAMFL5ha8" title="WCEC Sermon 2" allowfullscreen></iframe>
+</div>
+
+<div class="sermon-meta">WCEC Worship Service</div>
+
+<p>
+Dito naman ilagay ang detalye para sa pangalawang video. Maganda ito para sa mga miyembro na gustong mag-review ng mga nakaraang serye ng turo o nakaligtaan ang nakaraang Sunday Service.
+</p>
+
+</div>
+
+<!-- SERMON 3 -->
+
+<div class="about-block">
+
+<h2>Past Sermon</h2>
+
+<div class="divider">
+<span></span>
+✝
+<span></span>
+</div>
+
+<!-- Inilagay ko na rito yung pangatlong video mo pre -->
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/Q4PSst0RUvE" title="WCEC Sermon 3" allowfullscreen></iframe>
+</div>
+
+<div class="sermon-meta">WCEC Church Message</div>
+
+<p>
+Para sa ikatlong video, lagyan mo lang ulit ng maayos na summary. Madali mo lang mababago ang mga text, pangalan ng speaker, at petsa direct sa VSC mo habang nag-a-update kayo linggo-linggo.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="about-footer">
+
+<div>
+<h2>WCEC</h2>
+<p>World Conquest Evangelistic Church</p>
+<br>
+<p>📍 Marikina City, Philippines</p>
+<p>📞 0950 617 0873</p>
+<p>✉ worldconquestmain@gmail.com</p>
+</div>
+
+<div>
+<h3>QUICK LINKS</h3>
+<a href="index.html">Home</a>
+<a href="sermons.html">Sermons</a>
+<a href="about.html">About</a>
+</div>
+
+<div>
+<h3>FOLLOW US</h3>
+
+<a href="https://web.facebook.com/WorldConquestMarikina/directory_intro" target="_blank">
+Facebook
+</a>
+
+<a href="https://www.youtube.com/@worldconquestevangelisticc9549" target="_blank">
+YouTube
+</a>
+
+<a href="https://www.instagram.com/explore/locations/867833483/world-conquest-evangelistic-church/" target="_blank">
+Instagram
+</a>
+
+</div>
+
+</footer>
+
+<div class="copyright">
+© 2026 WCEC - World Conquest Evangelistic Church. All Rights Reserved.
+</div>
+
+</body>
+</html>
