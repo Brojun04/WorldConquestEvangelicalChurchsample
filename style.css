@@ -1,445 +1,331 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-background:#ffffff;
-overflow-x:hidden;
+    background:#ffffff;
+    overflow-x:hidden;
 }
 
 /* ================= NAVBAR ================= */
 
 .navbar{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-padding:25px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:100;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
 }
 
 .logo{
-display:flex;
-flex-direction:column;
-color:white;
-font-size:28px;
-font-weight:bold;
-letter-spacing:1px;
+    display:flex;
+    flex-direction:column;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
 .logo small{
-font-size:10px;
-font-weight:300;
-opacity:0.8;
-margin-top:2px;
+    font-size:10px;
+    font-weight:300;
+    opacity:0.8;
+    margin-top:2px;
 }
 
 .nav-links{
-display:flex;
-list-style:none;
-gap:30px;
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
 .nav-links a{
-text-decoration:none;
-color:white;
-font-size:15px;
-transition:0.3s;
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    transition:0.3s;
 }
 
 .nav-links a:hover{
-opacity:0.7;
+    opacity:0.7;
 }
 
 .nav-links a.active{
-opacity:1;
-text-decoration:underline;
+    opacity:1;
+    text-decoration:underline;
 }
 
 /* GIVE BUTTON */
 .give-btn{
-text-decoration:none;
-color:white;
-padding:12px 25px;
-border:1px solid white;
-border-radius:30px;
-transition:0.3s;
+    text-decoration:none;
+    color:white;
+    padding:12px 25px;
+    border:1px solid white;
+    border-radius:30px;
+    transition:0.3s;
 }
 
 .give-btn:hover{
-background:white;
-color:black;
+    background:white;
+    color:black;
 }
 
 /* ================= DROPDOWN ================= */
 
 .dropdown{
-position:relative;
+    position:relative;
 }
 
 .dropdown-menu{
-position:absolute;
-top:100%;
-left:0;
-background:rgba(0,0,0,0.85);
-list-style:none;
-padding:10px 0;
-min-width:180px;
-display:none;
-border-radius:10px;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:rgba(0,0,0,0.85);
+    list-style:none;
+    padding:10px 0;
+    min-width:180px;
+    display:none;
+    border-radius:10px;
 }
 
 .dropdown-menu li{
-padding:10px 15px;
+    padding:10px 15px;
 }
 
 .dropdown-menu li a{
-color:white;
-text-decoration:none;
-font-size:14px;
-display:block;
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    display:block;
 }
 
 .dropdown-menu li a:hover{
-opacity:0.7;
+    opacity:0.7;
 }
 
 .dropdown:hover .dropdown-menu{
-display:block;
+    display:block;
 }
 
 /* ================= HERO ================= */
 
 .hero{
-position:relative;
-height:85vh;
-background:url("images/hero.jpg") center center/cover no-repeat;
-border-bottom-left-radius:40px;
-border-bottom-right-radius:40px;
-overflow:hidden;
-
-display:flex;
-align-items:flex-end;
-padding:100px 8%;
+    position:relative;
+    height:85vh;
+    background:url("images/hero.jpg") center center/cover no-repeat;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+    overflow:hidden;
+    display:flex;
+    align-items:flex-end;
+    padding:100px 8%;
 }
 
 .overlay{
-position:absolute;
-inset:0;
-background:linear-gradient(
-rgba(0,0,0,.2),
-rgba(0,0,0,.6)
-);
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6));
 }
 
 .hero-content{
-position:relative;
-z-index:5;
-color:white;
+    position:relative;
+    z-index:5;
+    color:white;
 }
 
 .hero-content h1{
-font-size:78px;
-font-weight:700;
+    font-size:78px;
+    font-weight:700;
 }
 
 /* ================= BREADCRUMB ================= */
 
 .breadcrumb{
-font-size:14px;
-letter-spacing:1px;
-margin-bottom:20px;
-text-transform:uppercase;
-display:flex;
-align-items:center;
-gap:10px;
+    font-size:14px;
+    letter-spacing:1px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .breadcrumb a{
-color:white;
-text-decoration:none;
-opacity:0.75;
-transition:0.3s;
+    color:white;
+    text-decoration:none;
+    opacity:0.75;
+    transition:0.3s;
 }
 
 .breadcrumb a:hover{
-opacity:1;
-text-decoration:underline;
+    opacity:1;
+    text-decoration:underline;
 }
 
 .divider{
-color:white;
-opacity:0.6;
+    color:white;
+    opacity:0.6;
 }
 
 /* ================= SERMONS ================= */
 
 .sermons{
-padding:100px 8%;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
+    padding:100px 8%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
 }
 
 .card{
-background:white;
-border-radius:24px;
-overflow:hidden;
-transition:.3s;
-cursor:pointer;
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+    transition:.3s;
+    cursor:pointer;
 }
 
 .card:hover{
-transform:translateY(-10px);
+    transform:translateY(-10px);
 }
 
 .card img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:24px;
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:24px;
 }
 
 .card-content{
-padding-top:20px;
+    padding-top:20px;
 }
 
 .card-content span{
-font-size:13px;
-color:#888;
-margin-bottom:10px;
-display:block;
+    font-size:13px;
+    color:#888;
+    margin-bottom:10px;
+    display:block;
 }
 
 .card-content h3{
-font-size:32px;
-line-height:1.2;
+    font-size:32px;
+    line-height:1.2;
 }
 
 /* ================= ABOUT SECTION ================= */
 
 .about-section{
-padding:140px 8%;
-text-align:center;
-background:url("images/about-bg.jpg") center center/cover no-repeat;
-position:relative;
-color:white;
+    padding:140px 8%;
+    text-align:center;
+    background:url("images/about-bg.jpg") center center/cover no-repeat;
+    position:relative;
+    color:white;
 }
 
-/* DARK OVERLAY */
 .about-overlay{
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.65);
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.65);
 }
 
 .about-section h2{
-position:relative;
-font-size:42px;
-margin-bottom:60px;
-z-index:2;
-letter-spacing:2px;
+    position:relative;
+    font-size:42px;
+    margin-bottom:60px;
+    z-index:2;
+    letter-spacing:2px;
 }
 
-/* GRID */
 .about-grid{
-position:relative;
-z-index:2;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
 }
 
-/* BOX DESIGN */
 .about-box{
-background:rgba(255,255,255,0.1);
-backdrop-filter:blur(8px);
-padding:40px;
-border-radius:20px;
-border:1px solid rgba(255,255,255,0.2);
-transition:0.3s;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(8px);
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.2);
+    transition:0.3s;
 }
 
 .about-box:hover{
-transform:translateY(-10px);
-background:rgba(255,255,255,0.15);
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.15);
 }
 
 .about-box h3{
-font-size:26px;
-margin-bottom:15px;
-color:white;
+    font-size:26px;
+    margin-bottom:15px;
+    color:white;
 }
 
 .about-box p{
-font-size:15px;
-line-height:1.6;
-color:rgba(255,255,255,0.85);
-}
-
-/* RESPONSIVE */
-@media(max-width:992px){
-.about-grid{
-grid-template-columns:1fr 1fr;
-}
-}
-
-@media(max-width:768px){
-.about-grid{
-grid-template-columns:1fr;
-}
+    font-size:15px;
+    line-height:1.6;
+    color:rgba(255,255,255,0.85);
 }
 
 /* ================= FOOTER ================= */
 
 footer{
-margin-top:80px;
-background:#060606;
-color:white;
-
-padding:80px 8%;
-
-display:flex;
-justify-content:space-between;
-gap:50px;
-
-border-top-left-radius:40px;
-border-top-right-radius:40px;
+    margin-top:80px;
+    background:#060606;
+    color:white;
+    padding:80px 8%;
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
 }
 
 .footer-left h2,
 .footer-right h2{
-font-size:40px;
-margin-bottom:20px;
+    font-size:40px;
+    margin-bottom:20px;
 }
 
 .footer-left p{
-margin-bottom:10px;
+    margin-bottom:10px;
 }
 
 .footer-right form{
-display:flex;
-flex-direction:column;
-gap:15px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 .footer-right input{
-width:350px;
-padding:18px;
-border:none;
-border-radius:40px;
+    width:350px;
+    padding:18px;
+    border:none;
+    border-radius:40px;
 }
 
 .footer-right button{
-width:160px;
-padding:15px;
-border:none;
-border-radius:40px;
-background:#d6b05d;
-cursor:pointer;
+    width:160px;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    background:#d6b05d;
+    cursor:pointer;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:992px){
-
-.sermons{
-grid-template-columns:1fr 1fr;
-}
-
-.about-grid{
-grid-template-columns:1fr 1fr;
-}
-
-.hero-content h1{
-font-size:55px;
-}
-
-}
-
-@media(max-width:768px){
-
-.nav-links{
-display:none;
-}
-
-.sermons{
-grid-template-columns:1fr;
-}
-
-.about-grid{
-grid-template-columns:1fr;
-}
-
-.hero-content h1{
-font-size:42px;
-}
-
-footer{
-flex-direction:column;
-}
-
-.footer-right input{
-width:100%;
-}
-
-}
 .verse{
     position: relative;
     top: 15px;
 }
-
-.menu-toggle{
-    display:none;
-    font-size:28px;
-    color:#fff;
-    cursor:pointer;
-}
-
-
-@media(max-width:768px){
-
-.navbar{
-    position:relative;
-}
-
-.nav-links{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    background:#111;
-    flex-direction:column;
-    text-align:center;
-    padding:20px 0;
-}
-
-.nav-links.active{
-    display:flex;
-}
-
-.nav-links li{
-    margin:15px 0;
-}
-
-.give-btn{
-    display:none;
-}
-
-.menu-toggle{
-    display:block;
-}
-
-}
-
-/* ================= MODERN MOBILE MENU ================= */
 
 .menu-toggle{
     display:none;
@@ -449,85 +335,188 @@ width:100%;
     z-index:200;
 }
 
-/* MOBILE ONLY ITEM */
 .mobile-only{
     display:none;
 }
 
-/* OVERLAY (dark background) */
-.menu-overlay{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.5);
-    opacity:0;
-    visibility:hidden;
-    transition:0.3s ease;
-    z-index:99;
-}
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
 
-.menu-overlay.active{
-    opacity:1;
-    visibility:visible;
-}
+@media(max-width:992px){
+    .sermons{
+        grid-template-columns:1fr 1fr;
+    }
+    .about-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .hero-content h1{
+        font-size:55px;
+    }
+    .navbar{
+        position:relative;
+    }
 
-/* NAV MOBILE SLIDE */
+    .menu-toggle{
+        display:block;
+    }
+
+    .give-btn{
+        display:none;
+    }
+
+    /* SLIDE MENU CONFIGURATION */
+    .nav-links{
+        display:flex;
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:75%;
+        height:100vh;
+        background:#111;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:25px;
+        transition:0.4s ease;
+        z-index:100;
+    }
+
+    /* KUNG ACTIVE, MAG-SLIDE PASOK */
+    .nav-links.active{
+        right:0;
+    }
+
+    .nav-links li{
+        margin:15px 0;
+    }
+
+    .nav-links li a{
+        font-size:18px;
+    }
+
+    .mobile-only{
+        display:block;
+    }
+
+    /* DROPDOWN FIX SA MOBILE */
+    .dropdown:hover .dropdown-menu {
+        display: none; /* Patayin ang hover sa mobile */
+    }
+
+    .dropdown-menu{
+        position:static;
+        display:none;
+        background:none;
+        padding:10px 0;
+        text-align: center;
+    }
+
+    .dropdown.active .dropdown-menu{
+        display:block;
+    }
+
+    /* OTHERS */
+    .sermons{
+        grid-template-columns:1fr;
+    }
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+    .hero-content h1{
+        font-size:42px;
+    }
+    footer{
+        flex-direction:column;
+    }
+    .footer-right input{
+        width:100%;
+    }
+}
 @media(max-width:768px){
+    /* Inalis ang position: relative para manatili siyang nakapatong sa hero image */
+    .navbar{
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 8%; /* Kaunting bawas sa padding para sa mobile */
+    }
 
-.navbar{
-    position:relative;
-}
+    .menu-toggle{
+        display: block;
+        color: #ffffff; /* Sinisiguradong puti ang kulay ng hamburger */
+    }
 
-/* HIDE DESKTOP BUTTON */
-.give-btn{
-    display:none;
-}
+    .give-btn{
+        display: none;
+    }
 
-/* SHOW HAMBURGER */
-.menu-toggle{
-    display:block;
-}
+    /* SLIDE MENU CONFIGURATION */
+    .nav-links{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: #111111;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        transition: 0.4s ease;
+        z-index: 100;
+    }
 
-/* SLIDE MENU */
-.nav-links{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:75%;
-    height:100vh;
-    background:#111;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:25px;
-    transition:0.4s ease;
-    z-index:100;
-}
+    /* KUNG ACTIVE, MAG-SLIDE PASOK */
+    .nav-links.active{
+        right: 0;
+    }
 
-/* ACTIVE STATE */
-.nav-links.active{
-    right:0;
-}
+    .nav-links li{
+        margin: 15px 0;
+    }
 
-/* MOBILE LINKS */
-.nav-links li a{
-    font-size:18px;
-}
+    .nav-links li a{
+        font-size: 18px;
+        color: #ffffff;
+    }
 
-/* SHOW GIVE INSIDE MENU */
-.mobile-only{
-    display:block;
-}
+    .mobile-only{
+        display: block;
+    }
 
-/* DROPDOWN FIX (CLICK FRIENDLY) */
-.dropdown-menu{
-    position:static;
-    display:none;
-    background:none;
-    padding:10px 0;
-}
+    /* DROPDOWN FIX SA MOBILE */
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
 
-.dropdown.active .dropdown-menu{
-    display:block;
-}
+    .dropdown-menu{
+        position: static;
+        display: none;
+        background: none;
+        padding: 10px 0;
+        text-align: center;
+    }
 
+    .dropdown.active .dropdown-menu{
+        display: block;
+    }
+
+    /* OTHERS */
+    .sermons{
+        grid-template-columns: 1fr;
+        padding: 50px 8%; /* Binawasan ang padding para hindi sobrang layo sa mobile */
+    }
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+    .hero-content h1{
+        font-size: 42px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-right input{
+        width: 100%;
+    }
 }
