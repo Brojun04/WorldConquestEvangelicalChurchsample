@@ -6,7 +6,7 @@ const icon = menuToggle.querySelector("i");
 // TOGGLE MENU
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
-
+    
     if(navLinks.classList.contains("active")){
         icon.classList.remove("fa-bars");
         icon.classList.add("fa-xmark");
@@ -30,7 +30,10 @@ const dropdown = document.querySelector(".dropdown");
 
 dropdown.addEventListener("click", (e) => {
     if(window.innerWidth <= 768){
-        e.preventDefault();
+        // Ina-allow lang ang preventDefault kung mismong main link ng dropdown ang kinlik
+        if(e.target.parentElement.classList.contains("dropdown")) {
+            e.preventDefault();
+        }
         dropdown.classList.toggle("active");
     }
 });
