@@ -117,8 +117,8 @@ body{
 }
 
 .hero-content h1{
-    font-size: 32px; /* Sakto sa mobile screen para hindi lumampas */
-    font-weight:700;
+    font-size: 27px; /* Sakto sa mobile screen para hindi lumampas */
+    font-weight:600;
     line-height: 1.2;
     margin-bottom: 10px;
 }
